@@ -4,6 +4,7 @@ import Image from "next/image";
 import { MotionSection, motion } from "@/lib/motion";
 import { DotGrid } from "@/components/Decorations";
 import { aboutContent, education, personalInfo } from "@/data/portfolio";
+import { assetPath } from "@/lib/assetPath";
 
 export default function About() {
   return (
@@ -22,7 +23,7 @@ export default function About() {
           <DotGrid className="absolute -top-3 -left-3" />
           <div className="relative aspect-[3/4] w-full max-w-[280px] border border-[#abb2bf33] overflow-hidden">
             <Image
-              src={aboutContent.profileImage}
+              src={assetPath(aboutContent.profileImage)}
               alt={personalInfo.name}
               fill
               className="object-cover"
@@ -75,7 +76,7 @@ export default function About() {
           </motion.p>
 
           <motion.a
-            href={personalInfo.resumeUrl}
+            href={assetPath(personalInfo.resumeUrl)}
             download
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}

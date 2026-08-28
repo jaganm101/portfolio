@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { MotionSection, motion } from "@/lib/motion";
 import { projects } from "@/data/portfolio";
+import { assetPath } from "@/lib/assetPath";
 
 export default function Projects() {
   return (
@@ -26,7 +27,7 @@ export default function Projects() {
           >
             <div className="relative h-44 border-b border-[#abb2bf33] overflow-hidden">
               <Image
-                src={project.image}
+                src={assetPath(project.image)}
                 alt={project.name}
                 fill
                 className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"

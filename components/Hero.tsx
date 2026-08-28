@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { DotGrid, PurpleFrame } from "@/components/Decorations";
 import { personalInfo, aboutContent, heroQuote } from "@/data/portfolio";
+import { assetPath } from "@/lib/assetPath";
 
 export default function Hero() {
   return (
@@ -54,7 +55,7 @@ export default function Hero() {
 
             <div className="relative z-10 aspect-square overflow-hidden border border-[#abb2bf33]">
               <Image
-                src={aboutContent.profileImage}
+                src={assetPath(aboutContent.profileImage)}
                 alt={personalInfo.name}
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
