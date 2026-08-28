@@ -11,7 +11,7 @@ export default function Projects() {
         <h2 className="section-title mb-0">
           <span>#</span>works
         </h2>
-        <p className="text-muted text-sm">// click on project to learn more</p>
+        <p className="text-muted text-sm">{"// click on project to learn more"}</p>
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">

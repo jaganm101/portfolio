@@ -54,7 +54,7 @@ export default function About() {
             transition={{ delay: 0.15 }}
             className="box-muted p-5"
           >
-            <p className="text-primary text-sm mb-3">// Areas of expertise</p>
+            <p className="text-primary text-sm mb-3">{"// Areas of expertise"}</p>
             <ul className="space-y-2">
               {aboutContent.expertise.map((item) => (
                 <li key={item} className="flex gap-2 text-muted text-sm">
@@ -89,7 +89,7 @@ export default function About() {
       </div>
 
       <div className="mt-16">
-        <p className="text-primary text-sm mb-6">// education</p>
+        <p className="text-primary text-sm mb-6">{"// education"}</p>
         <div className="grid sm:grid-cols-3 gap-4">
           {education.map((item) => (
             <div key={item.degree} className="card p-5">

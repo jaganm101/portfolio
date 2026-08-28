@@ -34,7 +34,7 @@ export default function Experience() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <p className="text-primary text-xs mb-3">// responsibilities</p>
+                <p className="text-primary text-xs mb-3">{"// responsibilities"}</p>
                 <ul className="space-y-2">
                   {exp.responsibilities.map((item) => (
                     <li key={item} className="flex gap-2 text-muted text-xs sm:text-sm">
@@ -45,7 +45,7 @@ export default function Experience() {
                 </ul>
               </div>
               <div>
-                <p className="text-primary text-xs mb-3">// technologies</p>
+                <p className="text-primary text-xs mb-3">{"// technologies"}</p>
                 <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech) => (
                     <span key={tech} className="tag">
