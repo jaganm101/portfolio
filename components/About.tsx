@@ -77,14 +77,14 @@ export default function About() {
 
           <motion.a
             href={assetPath(personalInfo.resumeUrl)}
-            download
+            download="Jagan_M_Resume.pdf"
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.25 }}
             className="btn-outline inline-flex mt-2"
           >
-            Open resume !!
+            Download resume !!
           </motion.a>
         </div>
       </div>

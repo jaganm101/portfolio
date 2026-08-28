@@ -209,8 +209,14 @@ export const projects = [
   {
     id: 1,
     name: "Medical Tourism Management Platform",
+    role: "Full Stack Developer",
     description:
       "Multi-tier web portal managing patient intake, hospital coordination, medical case files, quotations, and international billing with strict RBAC separating patient, doctor, coordinator, and finance team permissions.",
+    highlights: [
+      "Engineered a multi-tier web portal managing patient intake, hospital coordination, medical case files, quotations, and international billing.",
+      "Implemented strict RBAC separating patient, doctor, hospital coordinator, and finance team permissions with high data confidentiality standards.",
+      "Designed normalized PostgreSQL database structures and optimized query performance for rapid case history retrieval.",
+    ],
     image: "/projects/meditour.svg",
     technologies: [
       "React.js",
@@ -230,8 +236,14 @@ export const projects = [
   {
     id: 2,
     name: "Healthcare & Membership Management Platform",
+    role: "Full Stack / Mobile Developer",
     description:
       "Web and cross-platform mobile application for corporate membership management and employee onboarding with automated Stripe subscription renewals and Auth0 SSO authentication.",
+    highlights: [
+      "Developed web and cross-platform mobile interfaces in React Native and React.js for corporate membership management and employee onboarding.",
+      "Implemented automated subscription renewal pipelines with seamless Stripe payment processing and multi-tier billing models.",
+      "Integrated secure passwordless and SSO authentication flows leveraging Auth0, OpenID Connect, and Azure AD over a high-throughput PostgreSQL backend.",
+    ],
     image: "/projects/arogyanow.svg",
     technologies: [
       "React Native",
@@ -251,8 +263,14 @@ export const projects = [
   {
     id: 3,
     name: "DRT – Doctor Request Tracking",
+    role: "Full Stack Developer",
     description:
       "End-to-end marketing and field-force automation platform tracking medical representative interactions, doctor conversion requests, and promotional campaigns with multi-level approval workflows.",
+    highlights: [
+      "Developed an end-to-end marketing and field-force automation application tracking medical representative interactions, doctor conversion requests, and promotional campaigns.",
+      "Engineered multi-level hierarchical approval workflows for marketing budgets, doctor conversion approvals, and sample disbursement tracking.",
+      "Built real-time marketing analytics dashboards visualizing representative territory performance, campaign ROI, and monthly engagement metrics.",
+    ],
     image: "/projects/drt.svg",
     technologies: [
       "React.js",
@@ -272,8 +290,14 @@ export const projects = [
   {
     id: 4,
     name: "VMRF – Research Grant Management",
+    role: "Full Stack Developer",
     description:
       "Centralized fund allocation and research grant management system for university faculty with multi-stage review pipelines, milestone tracking, and Azure AD SSO-secured administrative portals.",
+    highlights: [
+      "Architected a centralized fund allocation and research grant management system for university faculty, departments, and research scholars.",
+      "Implemented multi-stage grant application review pipelines, milestone tracking, fund disbursement auditing, and automated budget utilization reports.",
+      "Secured faculty and institutional administrative portals using Azure AD SSO and fine-grained RBAC over normalized MySQL schemas.",
+    ],
     image: "/projects/vmrf.svg",
     technologies: [
       "React.js",
@@ -290,8 +314,14 @@ export const projects = [
   {
     id: 5,
     name: "Enterprise Salesforce CRM",
+    role: "Salesforce Developer",
     description:
       "Custom CRM application with responsive Lightning Web Components, complex custom object schemas, optimized Apex triggers, and automated business workflows for operational teams.",
+    highlights: [
+      "Developed responsive Lightning Web Components (LWC) styled with custom CSS to modernize legacy CRM user interfaces for operational teams.",
+      "Constructed complex custom object data models with master-detail/lookup relationships and optimized Apex triggers adhering strictly to governor limits.",
+      "Automated mission-critical business workflows using Salesforce Flows, Process Builders, Validation Rules, and Approval Processes.",
+    ],
     image: "/projects/salesforce-crm.svg",
     technologies: [
       "Salesforce",

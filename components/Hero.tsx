@@ -32,15 +32,23 @@ export default function Hero() {
               {personalInfo.tagline}
             </motion.p>
 
-            <motion.a
-              href="#contact"
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="btn-outline"
+              className="flex flex-wrap gap-4"
             >
-              Contact me !!
-            </motion.a>
+              <a href="#contact" className="btn-outline">
+                Contact me !!
+              </a>
+              <a
+                href={assetPath(personalInfo.resumeUrl)}
+                download="Jagan_M_Resume.pdf"
+                className="btn-outline"
+              >
+                Download resume !!
+              </a>
+            </motion.div>
           </div>
 
           <motion.div

@@ -1,8 +1,9 @@
 "use client";
 
 import { MotionSection, motion } from "@/lib/motion";
-import { Mail, Linkedin, Phone } from "lucide-react";
+import { Mail, Linkedin, Phone, Download } from "lucide-react";
 import { personalInfo, contactContent } from "@/data/portfolio";
+import { assetPath } from "@/lib/assetPath";
 
 const contacts = [
   {
@@ -82,6 +83,14 @@ export default function Contact() {
             className="btn-outline w-full justify-center mt-6"
           >
             Send message !!
+          </a>
+          <a
+            href={assetPath(personalInfo.resumeUrl)}
+            download="Jagan_M_Resume.pdf"
+            className="btn-outline w-full justify-center mt-3"
+          >
+            <Download size={16} />
+            Download resume !!
           </a>
         </motion.div>
       </div>

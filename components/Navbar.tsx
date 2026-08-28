@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Linkedin } from "lucide-react";
+import { Menu, X, Linkedin, Download } from "lucide-react";
 import { navLinks, personalInfo } from "@/data/portfolio";
+import { assetPath } from "@/lib/assetPath";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,6 +64,14 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <a
+            href={assetPath(personalInfo.resumeUrl)}
+            download="Jagan_M_Resume.pdf"
+            className="text-accent text-sm hover:opacity-80 inline-flex items-center gap-1"
+          >
+            <Download size={18} />
+            resume
+          </a>
+          <a
             href={personalInfo.linkedin}
             target="_blank"
             rel="noopener noreferrer"
@@ -102,6 +111,15 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
+              <a
+                href={assetPath(personalInfo.resumeUrl)}
+                download="Jagan_M_Resume.pdf"
+                onClick={() => setIsOpen(false)}
+                className="block nav-link py-1"
+              >
+                <span className="text-accent">#</span>
+                resume
+              </a>
             </div>
           </motion.div>
         )}
