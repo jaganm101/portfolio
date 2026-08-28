@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #282c33;
+  --color-surface: #1e2227;
+  --color-border: #abb2bf33;
+  --color-muted: #abb2bf;
+  --color-foreground: #ffffff;
+  --color-primary: #ffffff;
+  --color-accent: #c778dd;
+  --color-accent-dim: #c778dd80;
+  --font-mono: var(--font-fira-code), ui-monospace, monospace;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: #282c33;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.border-accent {
+  border-color: var(--color-accent);
+}
+
+.section-padding {
+  @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+}
+
+.section-title {
+  @apply text-3xl sm:text-4xl font-semibold text-primary mb-12;
+}
+
+.section-title span {
+  color: var(--color-accent);
+}
+
+.box-border {
+  border: 1px solid var(--color-accent);
+}
+
+.box-muted {
+  border: 1px solid #abb2bf55;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium transition-all duration-300;
+  color: var(--color-foreground);
+  border: 1px solid var(--color-accent);
+}
+
+.btn-outline:hover {
+  background: rgba(199, 120, 221, 0.1);
+}
+
+.tag {
+  @apply px-3 py-1 text-xs;
+  color: var(--color-foreground);
+  border: 1px solid #abb2bf55;
+  background: var(--color-surface);
+}
+
+.tag-accent {
+  @apply px-3 py-1 text-xs;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+.dot-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 4px);
+  gap: 4px;
+}
+
+.dot-grid span {
+  width: 4px;
+  height: 4px;
+  background: #abb2bf55;
+  border-radius: 1px;
+}
+
+.frame-deco {
+  border: 1px solid var(--color-accent);
+  pointer-events: none;
+}
+
+.frame-deco-muted {
+  border: 1px solid #abb2bf44;
+  pointer-events: none;
+}
+
+.quote-box {
+  border: 1px solid var(--color-accent);
+  position: relative;
+}
+
+.quote-author {
+  position: absolute;
+  bottom: -1px;
+  right: 24px;
+  transform: translateY(50%);
+  border: 1px solid var(--color-accent);
+  background: var(--color-background);
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  color: var(--color-foreground);
+}
+
+.nav-link {
+  @apply text-sm transition-colors;
+  color: var(--color-muted);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-accent);
+}
+
+.card {
+  border: 1px solid #abb2bf33;
+  background: var(--color-surface);
+  transition: border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--color-accent-dim);
+}
+
+.divider {
+  height: 1px;
+  background: #abb2bf33;
+  width: 100%;
+}

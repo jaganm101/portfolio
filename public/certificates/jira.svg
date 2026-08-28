@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <rect width="400" height="280" fill="#0052cc"/>
+  <text x="200" y="110" text-anchor="middle" fill="#ffffff" font-family="system-ui,sans-serif" font-size="28" font-weight="bold">Jira</text>
+  <text x="200" y="150" text-anchor="middle" fill="#ffffff" font-family="system-ui,sans-serif" font-size="14" opacity="0.9">Fundamentals</text>
+  <rect x="50" y="180" width="300" height="2" fill="#ffffff" opacity="0.3"/>
+  <text x="200" y="220" text-anchor="middle" fill="#ffffff" font-family="system-ui,sans-serif" font-size="12" opacity="0.7">Atlassian</text>
+</svg>

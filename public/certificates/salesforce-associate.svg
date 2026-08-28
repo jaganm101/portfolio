@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <rect width="400" height="280" fill="#032d60"/>
+  <text x="200" y="100" text-anchor="middle" fill="#00a1e0" font-family="system-ui,sans-serif" font-size="32" font-weight="bold">salesforce</text>
+  <text x="200" y="150" text-anchor="middle" fill="#ffffff" font-family="system-ui,sans-serif" font-size="13">Certified Associate</text>
+  <rect x="50" y="180" width="300" height="2" fill="#00a1e0" opacity="0.5"/>
+  <text x="200" y="220" text-anchor="middle" fill="#888" font-family="system-ui,sans-serif" font-size="12">Associate Certified</text>
+</svg>

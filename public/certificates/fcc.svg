@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <rect width="400" height="280" fill="#0a0a23"/>
+  <text x="200" y="110" text-anchor="middle" fill="#ffffff" font-family="system-ui,sans-serif" font-size="28" font-weight="bold">freeCodeCamp</text>
+  <text x="200" y="150" text-anchor="middle" fill="#f1be32" font-family="system-ui,sans-serif" font-size="14">JavaScript Algorithms</text>
+  <rect x="50" y="190" width="300" height="2" fill="#f1be32" opacity="0.5"/>
+  <text x="200" y="230" text-anchor="middle" fill="#888" font-family="system-ui,sans-serif" font-size="12">Data Structures</text>
+</svg>
